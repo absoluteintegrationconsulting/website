@@ -1,0 +1,6 @@
+[submodule "BT3-Flat"]
+	path = BT3-Flat
+	url = https://github.com/KenMercusLai/BT3-Flat.git
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
