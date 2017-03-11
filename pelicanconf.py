@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import datetime
 
 AUTHOR = u'Alex Hutton'
 AUTHORS = ['AAA', 'BBB']
@@ -8,6 +9,7 @@ SITENAME = u'Absolute Integration Consulting'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['css']
 
 TIMEZONE = 'Australia/Melbourne'
 
@@ -41,9 +43,13 @@ PLUGIN_PATHS = ['pelican-plugins']
 
 THEME = 'BT3-Flat'
 
+CSS_FILE = 'styles.css'
+
 # BT3-Flat
 
 ARCHIVE_LIST = True
+
+COPYRIGHT = '%s &copy; All Rights Reserved.' % datetime.datetime.now().year
 
 DEFAULT_DATA_FORMAT = ('%Y/%m/%d %a')
 
@@ -52,7 +58,26 @@ ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
 
 PLUGINS = ['sitemap', 'neighbors', 'related_posts']
 
-PERSONAL_INFO = """Hello, this is my personal info"""
+SERVICES_TEXT = """
+<p>
+We specialise in integration work. Integrate your website or application
+with a third party API. Offer your own API. Meld four or five APIs together to
+create your own unique service. Migrate a legacy SOAP API to REST. Facade your
+legacy database with a web service to avoid direct database queries.  Create an
+adapter to external services to avoid vendor lock-in.
+</p>
+<p>
+Whatever service you need to integrate with, Open Auth, payments, SMS,
+chatbots, analytics, image processing, booking, social media or any
+proprietary system you can think of, our mission is to give you a tested,
+documented, accurate solution that will exceed your expectations and deliver
+you the greatest possible value for money.
+</p>
+"""
+
+PERSONAL_INFO = """
+Elite level API and Integration development, at your service."""
 
 HEADER_IMAGE = 'https://dl.dropboxusercontent.com/u/299446/logo-invert.png'
+HEADER_IMAGE = 'planes.jpg'
 BACKGROUND_IMAGE = 'http://images.nationalgeographic.com/wpf/media-live/photos/000/763/cache/egret-fog-reflection_76312_990x742.jpg'
