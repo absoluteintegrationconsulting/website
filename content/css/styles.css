@@ -1,3 +1,11 @@
 a.btn-fullscreen {
   display: none;
 }
+
+#contactForm .btn:hover, #contactForm .btn.hover {
+  border-width: 1px !important;
+}
+
+.navbar-header > a > span {
+  padding-left: 1ex;
+}
